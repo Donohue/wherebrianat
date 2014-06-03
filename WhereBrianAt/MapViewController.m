@@ -25,6 +25,7 @@
         self.locationManager.delegate = self;
         self.locationManager.desiredAccuracy = kCLLocationAccuracyBestForNavigation;
         self.locationManager.distanceFilter = kCLDistanceFilterNone;
+        [self.locationManager requestAlwaysAuthorization]; //iOS8 API
     }
     return self;
 }

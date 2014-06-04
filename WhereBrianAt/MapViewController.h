@@ -10,9 +10,7 @@
 #import <CoreLocation/CoreLocation.h>
 #import <MapKit/MapKit.h>
 
-@interface MapViewController : UIViewController <CLLocationManagerDelegate, MKMapViewDelegate> {
-    NSTimer *timer;
-}
+@interface MapViewController : UIViewController <CLLocationManagerDelegate, MKMapViewDelegate>
 
 @property (nonatomic, strong) CLLocationManager *locationManager;
 @property (nonatomic, strong) CLLocation *lastLocation;
